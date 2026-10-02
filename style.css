@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("fonts/SFpro.otf") format("opentype");
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0px;
+    font-family: "MyFont", sans-serif;
+    background: linear-gradient(to left,#134E5E,#71B280);
+    padding: 0px;
+    user-select: none;
+}
+.greetings{
+width: 50%;
+height: 100vh;
+color: rgb(0, 0, 0);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.greet{
+    font-size: 50px;
+
+}
+.details{
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+name{
+    color:#eefaf1;
+}
+.things{
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 100px;
+    width: 500px;
+    
+    padding-bottom: 100px;
+    color: #eefaf1;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height: fit-content;
+}
+.item{
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 20px;
+    border-radius: 10px;
+    border:solid 1px#eefaf1;
+    height: fit-content; 
+}
+
+.content{
+    overflow: hidden;
+    height: 0px;
+    transition: height 400ms ease;
+}
+#cont2{
+    overflow: hidden;
+    display: grid;
+    gap: 20px;
+    margin-left: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    transition: padding-top 400ms ease, height 400ms ease;
+    padding-top: 0px;
+}
+#cont2.show {
+    height: 260px;
+    padding-top: 10px;
+}
+#cont3.show{
+    height: 400px;
+}
+.show{
+    height: 100px;
+    display: block;
+}
+.det{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.proj{
+    background-color: #00000049;
+    padding: 20px;
+    height: 25px;
+    transform: translate(0px,0px);
+    transition: transform 400ms , border 100ms;
+    border-radius: 10px;
+    border: #eefaf133 solid 1px;
+    margin-top: 10px;
+}
+#pro5{
+    height: 35px;
+}
+.code{
+    width: 60px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 10px;
+    scale:1;
+    padding: 15px;
+    background-color: #00000049;
+    border: #eefaf133 solid 1px;
+    transition: border 100ms ease,scale 100ms;
+    justify-content: center;
+    align-items: center;
+}
+.code:hover{
+    border:1px solid #eefaf1;
+    scale: 0.95;
+    transition: box-shadow 100ms;
+}
+.code img{
+    width: 40px;
+    height: 40px;
+}
+.progress {
+    height: 5px;
+    width: 55px;
+    background: #9c9b9b;
+    border-radius: 999px;
+}
+.focus{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(10px);
+    z-index: 9;
+    background-color: #00000049;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-fill {
+    height: 100%;
+    background: #fff;
+    border-radius: 999px;
+}
+.proj.Big,#pro5.Big{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    
+    z-index: 99999;
+    width: 600px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-wrap:break-word;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.301);
+    border: #eefaf1 solid 1px;
+    border-radius: 10px;
+    scale:1;
+    transition: transform 400ms,height 400ms;
+}
+.proj:hover{
+    border:1px solid #eefaf1;
+    scale:0.99;
+}
+.proj.Big:hover{
+    scale: 1;
+}
+.scrolling{
+    margin-top: 10px;
+    height:240px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    gap: 20px;
+}
+#cont4.show{
+    height: 250px;
+}
+.course{
+    min-width: 150px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 10px;
+    scale:1;
+    padding: 15px;
+    background-color: #00000049;
+    border: #eefaf133 solid 1px;
+    transition: border 100ms ease,scale 100ms;
+    justify-content: center;
+    align-items: center;
+}
+.course:hover{
+    border:1px solid #eefaf1;
+    scale: 0.98;
+}
+.info{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}

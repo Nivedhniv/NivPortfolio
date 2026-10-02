@@ -1,0 +1,6 @@
+<div id="project1">
+            <div class="det" style="font-size: 20px; color:#eefaf1;">Rasple : Employee Management System <img src="/icons/rem.svg" onclick="resize('project1')"></div>
+            
+        </div><div class="focus">
+        
+        </div>
